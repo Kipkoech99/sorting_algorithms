@@ -1,3 +1,5 @@
+#include "sort.h"
+
 /**
  * swap - Function that swaps two integers
  * @a: The first integer
