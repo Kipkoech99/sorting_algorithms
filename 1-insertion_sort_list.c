@@ -3,7 +3,7 @@
 /**
  * _nodeSwap - Function to switch nodes
  * @h: Pointer to the first node
- * @hode1: The first node
+ * @node1: The first node
  * @node2: The other node for swap
  *
  * Return: Nothing
@@ -33,8 +33,9 @@ void insertion_sort_list(listint_t **list)
 	listint_t *current, *prev_node, *next_node;
 
 	if (list == NULL || *list == NULL || (*list)->next == NULL)
+	{
 		return;
-	
+	}
 	for (current = (*list)->next; current != NULL; current = next_node)
 	{
 		next_node = current->next;
